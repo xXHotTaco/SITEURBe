@@ -1,0 +1,19 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "siteurbe-api",
+	"main": "src/server.js",
+	"compatibility_date": "2026-06-17",
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"CORS_ORIGIN": "*"
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "siteurbe-db",
+			"database_id": "3b799a0f-6e3b-447c-ba1c-f9cc884691b4"
+		}
+	]
+}
